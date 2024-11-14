@@ -1,0 +1,56 @@
+<%- layout("layouts/boilerplate") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1 style="text-align: center; ">Create a new Listing</h1>
+    <div class="addForm">
+        
+        <form action="/listings" method="POST" novalidate class="needs-validation">
+            <div class="addNewInputBox">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" name="title" placeholder="Enter Title" class="form-control" required>
+                <div class="valid-feedback">Correct format</div>
+            </div>
+            <br>
+            <div class="addNewInputBox">
+                <label for="description" class="form-label">Description</label>
+                <input  name="description" placeholder="Enter Description" class="form-control" required>
+                <div class="valid-feedback">Correct format</div>
+            </div>
+            <br>
+            <div class="addNewInputBox">
+                <label for="image" class="form-label">Image-URL</label>
+                <input type="text" name="image" placeholder="Enter Image URL" >
+                <div class="valid-feedback">Correct format</div>
+            </div>    
+            <br>
+            <div class="addNewInputBox">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" name="price" placeholder="Enter Price" required>
+                <div class="valid-feedback">Correct format</div>
+            </div>    
+            <br>
+            <div class="addNewInputBox">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" name="country" placeholder="Enter Country" required>
+                <div class="valid-feedback">Correct format</div>
+            </div>
+            <br>
+            <div class="addNewInputBox">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" name="location" placeholder="Enter Location" required>
+                <div class="valid-feedback">Correct format</div>
+            </div>
+            <br>
+            <a href="/listings"></a><button type="submit">Add Listing</button></a>
+           
+        </form>
+    </div>
+</body>
+</html>

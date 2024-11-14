@@ -1,0 +1,85 @@
+.container{
+    background-color: #3b3a37;
+    color:#bdc0b9;
+}
+body{
+    background-color: #bdc0b9;
+}
+.f-info-links a {
+    text-decoration: none;
+    color: #3b3a37; 
+}
+.f-info-links a:hover {
+    text-decoration: underline ;
+    
+}
+.f-info-links,.f-info-socials{
+    width:100%;
+   
+}
+
+.f-info-socials i {
+    justify-content: space-evenly;
+    font-size:1.2rem;
+    margin-right: 1 rem;
+}
+.f-info{
+    height:8rem;
+    background-color: #bdc0b9;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items:space-evenly;
+}
+
+.card{
+    border:none !important;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    opacity: 1;
+    
+}
+.card:hover{
+    opacity: 0.8;
+    background-color: #bdc0b9;
+    
+}
+.card-body{
+    background-color: #bdc0b9;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width:100% !important;
+    object-fit: cover !important;
+}
+.listing_link{
+    text-decoration: none;
+}
+
+.addForm{
+    margin-top: 5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.addNewInputBox{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.showDetails{
+    display:flex;
+    justify-content: space-between;
+}    
+.showDetails img{
+    height:25rem;
+    width:auto;
+}
+.new-button{
+    background-color: #bdc0b9;
+    border-radius: 15%;
+}    
+.class container-fluid{
+    color:#bdc0b9;
+    background-color:#3b3a37 ;
+}

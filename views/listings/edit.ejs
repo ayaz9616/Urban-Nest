@@ -1,0 +1,93 @@
+<%- layout("layouts/boilerplate") %>
+    <h1 style="text-align: center; ">Edit Your Listing</h1>
+    <body>
+        <div class="showDetails">
+            <div class="addForm">
+                <form method="POST" action="/listing/<%= listing._id %>?_method=PUT">
+                    <div class="addNewInputBox">
+                        <label for="title" class="form-label">Title</label>
+                        <input value="<%- listing.title %>" type="text" name="title" placeholder="<%- listing.title %>" class="form-control" >
+                       
+                    </div>
+                    <br>
+                    <div class="addNewInputBox">
+                        <label for="description" class="form-label">Description</label>
+                        <input value="<%- listing.description %>" name="description" placeholder="<%- listing.description %>" class="form-control" >
+                       
+                    </div>
+                    <br>
+                    <div class="addNewInputBox">
+                        <label for="image" class="form-label">Image-URL</label>
+                        <input value="<%- listing.image %>" type="text" name="image" placeholder="<%- listing.image %>" >
+                        
+                    </div>    
+                    <br>
+                    <div class="addNewInputBox">
+                        <label for="price" class="form-label">Price</label>
+                        <input value=<%- listing.price %> type="number" name="price" placeholder="<%- listing.price %>">
+                     
+                    </div>    
+                    <br>
+                    <div class="addNewInputBox">
+                        <label for="country" class="form-label">Country</label>
+                        <input value="<%- listing.country %>" type="text" name="country" placeholder="<%- listing.country %>" >
+                       
+                    </div>
+                    <br>
+                    <div class="addNewInputBox">
+                        <label for="location" class="form-label">Location</label>
+                        <input value="<%- listing.location %>" type="text" name="location" placeholder="<%- listing.location %>" >
+                
+                    </div>
+                    <br>
+                    <button>Edit</button>
+                </form>
+            </div>
+            <img src="<%= listing.image %>" alt="">
+        </div>
+    
+    </body>
+    
+
+
+     <!-- <%- layout("layouts/boilerplate") %>
+<h1 style="text-align: center;">Edit Your Listing</h1>
+
+<div class="showDetails">
+    <div class="addForm">
+        <form method="POST" action="/listing/<%= listing._id %>?_method=PUT">
+            <div class="addNewInputBox">
+                <label for="title" class="form-label">Title</label>
+                <input value="<%- listing.title %>" type="text" name="title" placeholder="Title" class="form-control">
+            </div>
+            <br>
+            <div class="addNewInputBox">
+                <label for="description" class="form-label">Description</label>
+                <input value="<%- listing.description %>" name="description" placeholder="Description" class="form-control">
+            </div>
+            <br>
+            <div class="addNewInputBox">
+                <label for="image" class="form-label">Image-URL</label>
+                <input value="<%- listing.image %>" type="text" name="image" placeholder="Image URL">
+            </div>
+            <br>
+            <div class="addNewInputBox">
+                <label for="price" class="form-label">Price</label>
+                <input value="<%- listing.price %>" type="number" name="price" placeholder="Price">
+            </div>
+            <br>
+            <div class="addNewInputBox">
+                <label for="country" class="form-label">Country</label>
+                <input value="<%- listing.country %>" type="text" name="country" placeholder="Country">
+            </div>
+            <br>
+            <div class="addNewInputBox">
+                <label for="location" class="form-label">Location</label>
+                <input value="<%- listing.location %>" type="text" name="location" placeholder="Location">
+            </div>
+            <br>
+            <button>Edit</button>
+        </form>
+    </div>
+    <img src="<%= listing.image %>" alt="Listing Image">
+</div> -->
